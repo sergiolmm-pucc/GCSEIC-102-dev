@@ -1,1 +1,13 @@
 name: Aula para Git Actions
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  lista-ambiente:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Listar diretório
+        run: ls -la
+        
